@@ -49,4 +49,114 @@ section {
     transition:all 0.6s ease-out 0.3s; transform-origin: right center;
 }
 section.on { transform:rotate3d(0, 1, 0, -10deg); }
-section > div { position: absolute;  }
+section > div { 
+    position: absolute; width:100%; height:100%; opacity:0; z-index:1;
+    perspective:700px; transition: all 1.5s ease-in-out;
+}
+section > div > p { 
+    float:left; width:25%; height:25%; margin:0; padding:0;
+    text-align: center; overflow: hidden;
+    transform: rotate3d(0,1,0,180deg); transition:all 1.5s ease-in-out;
+}
+section > div.on { opacity:1; z-index:2; }
+section > div.on > p { transform: rotate3d(0,1,0,0deg); }
+
+section > div > p > strong {
+    position: absolute; left:0; top:50%; width:100%; margin-top: -35px;
+    font-size:50px; color:#e4e4e4; text-align:center; 
+}
+section > div > p > span {
+    position: absolute; left:0; top:50%; width:100%; margin-top: -10px;
+    font-size:20px; color:#f4f4f4; text-align:center; 
+}
+section > div > p > video { width:100%; height:100%; background:#000; object-fit: cover; }
+section > div > p > a { float:left; width:40px; height:30px; margin:0 10px; }
+section > div > p > a > i { 
+    font-size:30px; color:#e8e8e8; opacity: 0.75;
+    transition:all 0.3s ease-in;
+}
+section > div > p > a > i:hover { transform: scale(1.15); opacity: 1;}
+
+/*===== box1 =====*/
+.box1 > p:nth-child(1) { width:50%; background:#222; }
+.box1 > p:nth-child(2) { 
+    background:url(../imgs/m1.jpg) no-repeat center center; 
+    background-size:cover;
+}
+.box1 > p:nth-child(3) { padding:90px 70px; background:#444; }
+.box1 > p:nth-child(4) { 
+    float:right; width:50%; height:50%; 
+    background:url(../imgs/m2.jpg) no-repeat center center;
+    background-size:cover;
+}
+.box1 > p:nth-child(5) {
+    float:right; background:url(../imgs/m3.jpg) no-repeat center center;
+    background-size:cover;
+}
+.box1 > p:nth-child(6) { float:right; background:#777; }
+.box1 > p:nth-child(7) { float:right; background:#444; }
+.box1 > p:nth-child(8) { 
+    float:right; background:url(../imgs/m4.jpg) no-repeat center center;
+    background-size:cover;
+}
+.box1 > p:nth-child(9) { 
+    width:50%; background:url(../imgs/m5.jpg) no-repeat center center;
+    background-size:cover; 
+}
+.box1 > p:nth-child(10) { background:#444;  }
+.box1 > p:nth-child(11) { background:#222; }
+
+/*===== box2 =====*/
+.box2 > p:nth-child(1) { background:#444; }
+.box2 > p:nth-child(2) { 
+    background:url(../imgs/w1.jpg) no-repeat center center;
+    background-size:cover; 
+}
+.box2 > p:nth-child(3) { width:50%; background:#777; }
+.box2 > p:nth-child(4) { 
+    height:50%; background:url(../imgs/w2.jpg) no-repeat center center;
+    background-size:cover;  
+}
+.box2 > p:nth-child(5) { 
+    width:50%; height:50%; background:url(../imgs/w3.jpg) no-repeat center center;
+    background-size:cover;
+}
+.box2 > p:nth-child(6) { 
+    background:url(../imgs/w4.jpg) no-repeat center center;
+    background-size:cover;  
+}
+.box2 > p:nth-child(7) { background:#555; }
+.box2 > p:nth-child(8) {
+    background:url(../imgs/w5.jpg) no-repeat center center;
+    background-size:cover; 
+}
+.box2 > p:nth-child(9) { background:#444; }
+.box2 > p:nth-child(10) { 
+    background:url(../imgs/w6.jpg) no-repeat center center;
+    background-size:cover;
+}
+.box2 > p:nth-child(11) { background:#999; }
+
+/*===== box3 =====*/
+.box3 > p:nth-child(1) {
+    width:50%; height: 100%;
+    background:url(../imgs/k1.jpg) no-repeat center center; 
+    background-size: cover;
+}
+.box3 > p:nth-child(2) { background:#444; }
+.box3 > p:nth-child(3) { 
+    background:url(../imgs/k2.jpg) no-repeat center center; 
+    background-size: cover; 
+}
+.box3 > p:nth-child(4) { width:50%; background:#222; }
+.box3 > p:nth-child(5) { 
+    height:50%;
+    background:url(../imgs/k3.jpg) no-repeat center center; 
+    background-size: cover; 
+}
+.box3 > p:nth-child(6) { background:#555; }
+.box3 > p:nth-child(7) {
+    background:url(../imgs/k4.jpg) no-repeat center center; 
+    background-size: cover; 
+}
+
