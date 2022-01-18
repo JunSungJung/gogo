@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var ht = $(window).height();  // 웹 브라우저의 높이값을 얻어온다.
+
     $('section').height(ht); // 웹 브라우저의 높이값을 section의 높이값으로 지정한다.
 
     // 웹 브라우저를 리사이즈하면 다시 웹 브라우저의 높이값을 section의 높이값으로 지정한다.
@@ -15,7 +16,7 @@ $(document).ready(function(){
         for(var i=0; i < 4; i++) {
             if(sr >= ht*i && sr < ht*(i+1)) {
                 $('#menu li').removeClass();
-                $('#menu li').eq(0).addClass('on');
+                $('#menu li').eq(i).addClass('on');
             }
         }
 
